@@ -19,6 +19,13 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 ### August 8, 2023
 
+#### Fixes
+
+* We fixed an issue with Kanban boards in the Jira Connector where sub-tasks would cause duplicate entries in the interface to Studio Pro, resulting in an error
+* We fixed an issue where under certain circumstances it was possible to remove the last Scrum master of a Project
+
+### August 8, 2023
+
 #### Improvements
 
 * We released the [Webhooks API](/apidocs-mxsdk/apidocs/webhooks-api/) for general use. This API allows you to manage webhooks for actions which are performed on your Mendix apps. 
