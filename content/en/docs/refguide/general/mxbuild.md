@@ -2,7 +2,7 @@
 title: "MxBuild"
 url: /refguide/mxbuild/
 category: "General Info"
-weight: 50
+weight: 30
 description: "Describes MxBuild, which is a command-line tool for building and deploying Mendix Apps."
 tags: ["build", "deploy", "deployment package", "command-line", "studio pro"]
 ---
@@ -15,18 +15,16 @@ The version of MxBuild you need depends on the version of the Mendix model you w
 
 The table below can help you find the correct MxBuild. Copy a URL from the corresponding row into your browser and replace `mxversion` with your full Mendix version number:
 
-| Operating System | Mendix Version | URL                                                          |
-| ---------------- | -------------- | ------------------------------------------------------------ |
-| Linux (x64)      | All versions   | `https://cdn.mendix.com/runtime/mxbuild-{mxversion}.tar.gz`  |
-| Windows (x64)    | Below 9.20     | `https://cdn.mendix.com/runtime/mxbuild-{mxversion}.tar.gz`  |
-| Windows (x64)    | 9.20 – 9.22    | `https://cdn.mendix.com/runtime/mono-mxbuild-{mxversion}.tar.gz` |
-| Windows (x64)    | 9.23 and above | `https://cdn.mendix.com/runtime/win-mxbuild-{mxversion}.tar.gz` |
+| Operating System | Mendix Version               | URL                                                          |
+| ---------------- | ---------------------------- | ------------------------------------------------------------ |
+| Linux (x64)      | All versions                 | `https://cdn.mendix.com/runtime/mxbuild-{mxversion}.tar.gz`  |
+| Windows (x64)    | All version of Studio Pro 10 | `https://cdn.mendix.com/runtime/win-mxbuild-{mxversion}.tar.gz` |
 
 {{% alert color="info" %}}
 
-A build number is included in the version, and this has to be included in the link path mentioned above — for example, `8.12.1.3458` is the 3458 build of the 8.12.1 Studio Pro release.
+A build number is included in the version, and this has to be included in the link path mentioned above — for example, `10.0.0.5003` is the 5003 build of the 10.0.0 Studio Pro release.
 
-You can find the build number in path of your Mendix installation (for example if your installation looks like this `C:\Program Files\Mendix\8.12.1.3458`, use this URL to get your files: [https://cdn.mendix.com/runtime/mxbuild-8.12.1.3458.tar.gz](https://cdn.mendix.com/runtime/mxbuild-8.12.1.3458.tar.gz)).
+You can find the build number in path of your Mendix installation (for example if your installation looks like this `C:\Program Files\Mendix\10.0.0.5003`, use this URL to get your files: [https://cdn.mendix.com/runtime/mxbuild-10.0.0.5003.tar.gz](https://cdn.mendix.com/runtime/mxbuild-10.0.0.5003.tar.gz)).
 
 Any public version of Studio Pro in this  [Studio Pro Releases List](https://marketplace.mendix.com/link/studiopro/) will allow you to download MxBuild files. If you experience trouble downloading files, make sure your build is listed there.
 
@@ -50,9 +48,9 @@ In Windows, use the following format for the command line:
 
 `MxBuild --java-home="JDKDirectory" --java-exe-path="javaExecutable" [options] projectFile`
 
-You can also run MxBuild under Linux using the the following command line format:
+You can also run MxBuild under Linux using the following command line format:
 
-`mono mxbuild.exe --java-home="JDKDirectory" --java-exe-path="javaExecutable" [options] projectFile`
+`mxbuild --java-home="JDKDirectory" --java-exe-path="javaExecutable" [options] projectFile`
 
 After creating the deployment package, the MxBuild process quits.
 

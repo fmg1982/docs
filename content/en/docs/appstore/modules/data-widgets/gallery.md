@@ -16,10 +16,6 @@ Here is an example of a Gallery widget using filters:
 
 ### 1.2 Advanced Options
 
-{{% alert color="info" %}}
-The **Enable advanced options** toggle is available in Mendix Studio. In Mendix Studio Pro these advanced options are always available.
-{{% /alert %}}
-
 The gallery has an option to enable advanced options. When this option is toggled on, it enables numerous features to customize your gallery:
 
 * Pagination type
@@ -50,6 +46,10 @@ In the items group you can define the properties related to the items being pres
 Defines the amount of data shown for each page or the limit to be presented when using virtual scrolling.
 
 #### 2.3.2 Pagination
+
+{{% alert color="info" %}}
+This widget does not support [system texts](/refguide/system-texts/), meaning is not possible to translate its content to another language.
+{{% /alert %}}
 
 You can choose between paging buttons (button being presented below or above the grid) or virtual scrolling (mechanism that automatically loads data when the users reaches the bottom of the scroll bar). 
 

@@ -68,7 +68,7 @@ Decisions deal with making choices and merging different paths again.
 
 [Activities](/refguide/activities/) are the actions that are executed in a microflow:
 
-{{< figure src="/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/microflows/activity.png" alt="Activity" >}}
+{{< figure src="/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/microflows/activity.png" alt="Activity" width="150px" >}}
 
 ### 2.5 Loop {#loop}
 
@@ -126,11 +126,7 @@ If you want to see what happens while a microflow is executing, you can use the 
 
 ## 5 Converting a Microflow to a Nanoflow {#convert-to-nanoflow}
 
-{{% alert color="info" %}}
-This feature was introduced in Studio Pro [9.24.0](/releasenotes/studio-pro/9.24/#9240).
-{{% /alert %}}
-
-To convert a microflow to a nanoflow, right-click anywhere in the microflow editor and select **Convert to nanoflow**.
+To convert a microflow to a nanoflow, you have two options. The first option is to right-click anywhere in the microflow editor and select **Convert to nanoflow**. Alternatively, in the **App Explorer**, right-click on the name of the microflow you want to convert, and select **Convert to nanoflow**.
 
 {{< figure src="/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/microflows/convert-to-nanoflow.PNG" alt="Convert to nanoflow" width="550px" >}}
 
